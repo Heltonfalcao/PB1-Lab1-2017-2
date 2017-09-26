@@ -1,0 +1,66 @@
+﻿@model WebAppAutomovel.Models.Automovel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Automovel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Carro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Caminhao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Caminhao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Motocicleta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Motocicleta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataDeCadastro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataDeCadastro)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AutomovelId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
